@@ -9,6 +9,7 @@ GLuint VertexBifferId;
 // 顶点数组 保存三角形的 position
 static GLfloat VertexArray[] =
 {
+	// X     Y      Z
 	+0.0f, +0.5f, +0.0f,
 	-0.5f, -0.5f, +0.0f,
 	+0.5f, -0.5f, +0.0f
