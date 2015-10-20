@@ -13,6 +13,12 @@ public:
 	explicit Matrix2x2(float m11, float m12, float m21, float m22);
 	~Matrix2x2();
 	void identity();
+	void initlaizeScaleMatrix(const float scalex, const float scaley);
+	void iniitlaizeRotationMatrix(const float rotatex,const float rotatey);
+	void initlaizeTransformMatrix(const float transformx, const float transformy);
+public:
+	void scale(const float x,const float y);
+
 public:
 	bool operator==(const Matrix2x2 & right) const ;
 	bool operator!=(const Matrix2x2 & right) const ;

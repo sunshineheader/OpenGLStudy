@@ -30,6 +30,22 @@ void Matrix2x2::identity()
 	matrix[1][0] = 0.0f; matrix[1][1] = 1.0f;
 }
 
+void Matrix2x2::initlaizeScaleMatrix(const float scalex, const float scaley)
+{
+	matrix[0][0] = scalex;  matrix[0][1] = 0.0f;
+	matrix[1][0] = 0.0f;    matrix[1][1] = scaley;
+}
+void Matrix2x2::iniitlaizeRotationMatrix(const float rotatex, const float rotatey)
+{
+	matrix[0][0] = rotatex;  matrix[0][1] = 0.0f;
+	matrix[1][0] = 0.0f;     matrix[1][1] = rotatey;
+}
+void Matrix2x2::initlaizeTransformMatrix(const float transformx, const float transformy)
+{
+	matrix[0][0] = transformx;  matrix[0][1] = 0.0f;
+	matrix[1][0] = 0.0f;        matrix[1][1] = transformy;
+}
+
 bool Matrix2x2:: operator==(const Matrix2x2 & right) const
 {
 	return matrix[0][0] == right.matrix[0][0]

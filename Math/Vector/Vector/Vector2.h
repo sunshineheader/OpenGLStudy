@@ -17,6 +17,7 @@ public:
 	void negate();
 	void scale(const float scale);
 	void scale(const Vector2 & scale);
+	void scale(const float scalex,const float scaley);
 	void rotate(const Vector2 & point,float angle);
 
 	// Ä£³¤

@@ -41,14 +41,18 @@ void Vector2::negate()
 
 void Vector2:: scale(const float scale)
 {
-	x *= scale;
-	y *= scale;
+	this->scale(scale, scale);
 }
 
 void Vector2::scale(const Vector2 & scale)
 {
-	x *= scale.x;
-	y *= scale.y;
+	this->scale(scale.x,scale.y);
+}
+
+void Vector2::scale(const float scalex, const float scaley)
+{
+	x *= scalex;
+	y *= scaley;
 }
 
 void Vector2::rotate(const Vector2 & point, float angle)

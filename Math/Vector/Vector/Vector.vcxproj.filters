@@ -14,6 +14,9 @@
     <ClCompile Include="Matrix3x3.cpp">
       <Filter>Matrix</Filter>
     </ClCompile>
+    <ClCompile Include="Matrix4x4.cpp">
+      <Filter>Matrix</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector2.h">
@@ -26,6 +29,9 @@
       <Filter>Matrix</Filter>
     </ClInclude>
     <ClInclude Include="Matrix3x3.h">
+      <Filter>Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix4x4.h">
       <Filter>Matrix</Filter>
     </ClInclude>
   </ItemGroup>
